@@ -29,7 +29,7 @@ header {
   display: flex;
   justify-content: space-around;
   background-color: blanchedalmond;
-  padding: 15px;
+  padding: 15px 15px 25px 15px;
 }
 
 .menulink {
@@ -51,8 +51,8 @@ footer {
 }
 
 .menulink--active {
-  color: black;
-  background-color: white;
+  color: darkslategrey;
+  border-bottom: 2px solid darkslategray;
 }
 
 main {
@@ -62,7 +62,7 @@ main {
 
 .question-card {
   margin: 30px 30px 30px 30px;
-  border: 1px solid grey;
+  border: 2px solid whitesmoke;
   box-shadow: 1px 3px 3px lightgrey;
   padding: 30px 30px;
   display: flex;
@@ -84,10 +84,20 @@ main {
   margin-bottom: 30px;
 }
 
-.button--show {
+button {
   background-color: darkslateblue;
+  border: none;
   color: white;
-  padding: 8px 16px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.button--hide {
+  background-color: white;
+  color: darkslateblue;
+  padding: 10px 20px;
+  border: 2px solid darkslateblue;
   border-radius: 20px;
   text-align: center;
 }
@@ -118,20 +128,11 @@ main {
 
 .answer-card {
   margin: 30px 30px 30px 30px;
-  border: 1px solid grey;
+  border: 2px solid whitesmoke;
   box-shadow: 1px 3px 3px lightgrey;
   padding: 30px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-}
-
-.button--hide {
-  background-color: white;
-  color: darkslateblue;
-  padding: 8px 16px;
-  border: 2px solid darkslateblue;
-  border-radius: 20px;
-  text-align: center;
 }
