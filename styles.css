@@ -31,6 +31,7 @@ header {
   justify-content: space-around;
   background-color: #75c9b7;
   padding: 15px 15px 25px 15px;
+  list-style: none;
 }
 
 .menulink {
@@ -78,6 +79,7 @@ main {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 .question {
@@ -162,4 +164,5 @@ button {
 
 a {
   text-decoration: none;
+  color: #16123f;
 }
