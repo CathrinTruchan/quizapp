@@ -6,6 +6,7 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
 }
 
 header {
@@ -13,7 +14,6 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  margin-bottom: 20px;
 }
 
 .title {
@@ -21,6 +21,7 @@ header {
   color: white;
   padding: 15px;
   text-align: center;
+  font-size: 28px;
 }
 
 .menu {
@@ -51,4 +52,52 @@ footer {
 .menulink--active {
   color: black;
   background-color: white;
+}
+
+.question-card {
+  margin: 100px 30px 50px 30px;
+  border: 1px solid grey;
+  box-shadow: 1px 3px 3px lightgrey;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.tags {
+  align-self: flex-start;
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.question {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.button--show {
+  background-color: darkslateblue;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.tagbox {
+  border: 1px solid grey;
+  padding: 2px 5px;
+  background-color: grey;
+  color: white;
+  font-size: 10px;
+}
+
+.bookmark-not-active {
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  font-size: 30px;
+  color: lightgrey;
 }
