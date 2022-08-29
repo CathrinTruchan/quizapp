@@ -15,61 +15,75 @@
     <header>
       <h1 class="title">Quiz App</h1>
     </header>
-    <main>
+    <main class="question-wrapper">
       <section class="question-card">
-        <div class="bookmark"><i class="fa fa-bookmark"></i></div>
+        <div class="bookmark" aria-label="Bookmark">
+          <i class="fa fa-bookmark"></i>
+        </div>
         <span class="question">What property changes the axis in flexbox?</span>
-        <button>Show Answer</button>
-        <section class="tags">
-          <span class="tagbox">#html</span>
-          <span class="tagbox">#flexbox</span>
-          <span class="tagbox">#css</span>
-        </section>
+        <button class="question-button">Show Answer</button>
+        <ul class="tags">
+          <li class="tagbox">#html</li>
+          <li class="tagbox">#flexbox</li>
+          <li class="tagbox">#css</li>
+        </ul>
       </section>
       <section class="answer-card">
-        <div class="bookmark"><i class="fa fa-bookmark"></i></div>
+        <div class="bookmark" aria-label="Bookmark">
+          <i class="fa fa-bookmark"></i>
+        </div>
         <span class="question">The property "flex direction"</span>
-        <button class="button--hide">Hide Answer</button>
-        <section class="tags">
-          <span class="tagbox">#html</span>
-          <span class="tagbox">#flexbox</span>
-          <span class="tagbox">#css</span>
-        </section>
+        <button class="question-button button--hide">Hide Answer</button>
+        <ul class="tags">
+          <li class="tagbox">#html</li>
+          <li class="tagbox">#flexbox</li>
+          <li class="tagbox">#css</li>
+        </ul>
       </section>
       <section class="question-card">
-        <div class="bookmark active"><i class="fa fa-bookmark"></i></div>
+        <div class="bookmark active" aria-label="Bookmark">
+          <i class="fa fa-bookmark"></i>
+        </div>
         <span class="question">What property changes the axis in flexbox?</span>
-        <button>Show Answer</button>
-        <section class="tags">
-          <span class="tagbox">#html</span>
-          <span class="tagbox">#flexbox</span>
-          <span class="tagbox">#css</span>
-        </section>
+        <button class="question-button">Show Answer</button>
+        <ul class="tags">
+          <li class="tagbox">#html</li>
+          <li class="tagbox">#flexbox</li>
+          <lie class="tagbox">#css</lie>
+        </ul>
       </section>
       <section class="question-card">
-        <div class="bookmark"><i class="fa fa-bookmark"></i></div>
+        <div class="bookmark" aria-label="Bookmark">
+          <i class="fa fa-bookmark"></i>
+        </div>
         <span class="question">What property changes the axis in flexbox?</span>
-        <button>Show Answer</button>
-        <section class="tags">
-          <span class="tagbox">#html</span>
-          <span class="tagbox">#flexbox</span>
-          <span class="tagbox">#css</span>
-        </section>
+        <button class="question-button">Show Answer</button>
+        <ul class="tags">
+          <li class="tagbox">#html</li>
+          <li class="tagbox">#flexbox</li>
+          <li class="tagbox">#css</li>
+        </ul>
       </section>
     </main>
     <footer>
-      <nav class="menu">
-        <span
-          ><a class="menulink menulink--active" href="index.html"
-            ><i class="fa fa-home"></i></a
-        ></span>
-        <span
-          ><a class="menulink" href="bookmark.html"
-            ><i class="fa fa-bookmark"></i></a
-        ></span>
-        <span
-          ><a class="menulink" href=""><i class="fa fa-user"></i></a
-        ></span>
+      <nav>
+        <ul class="menu">
+          <li>
+            <a class="menulink menulink--active" href="index.html"
+              ><i class="fa fa-home"></i
+            ></a>
+          </li>
+          <li>
+            <a class="menulink" href="bookmark.html"
+              ><i class="fa fa-bookmark"></i
+            ></a>
+          </li>
+          <li>
+            <a class="menulink" href="profil.html"
+              ><i class="fa fa-user"></i
+            ></a>
+          </li>
+        </ul>
       </nav>
     </footer>
   </body>

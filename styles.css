@@ -7,6 +7,7 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
+  color: #16123f;
 }
 
 header {
@@ -18,23 +19,29 @@ header {
 }
 
 .title {
-  background-color: darkslateblue;
+  background-color: #75c9b7;
   color: white;
   padding: 15px;
   text-align: center;
   font-size: 28px;
 }
 
+.question-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
 .menu {
   display: flex;
   justify-content: space-around;
-  background-color: blanchedalmond;
+  background-color: #75c9b7;
   padding: 15px 15px 25px 15px;
+  list-style: none;
 }
 
 .menulink {
   text-decoration: none;
-  color: darkslateblue;
+  color: white;
   font-size: 30px;
   padding: 5px 15px;
 }
@@ -47,12 +54,12 @@ footer {
 }
 
 .menulink:hover {
-  color: turquoise;
+  color: #16123f;
 }
 
 .menulink--active {
-  color: darkslategrey;
-  border-bottom: 2px solid darkslategray;
+  color: #16123f;
+  border-bottom: 2px solid #16123f;
 }
 
 main {
@@ -60,8 +67,14 @@ main {
   margin-bottom: 100px;
 }
 
+.question-wrapper {
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
 .question-card {
-  margin: 30px 30px 30px 30px;
+  width: 300px;
+  margin: 30px 10px 30px 10px;
   border: 2px solid whitesmoke;
   box-shadow: 1px 3px 3px lightgrey;
   padding: 30px 30px;
@@ -77,6 +90,7 @@ main {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 .question {
@@ -84,8 +98,8 @@ main {
   margin-bottom: 30px;
 }
 
-button {
-  background-color: darkslateblue;
+.question-button {
+  background-color: #75c9b7;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -95,18 +109,18 @@ button {
 
 .button--hide {
   background-color: white;
-  color: darkslateblue;
+  color: #75c9b7;
   padding: 10px 20px;
-  border: 2px solid darkslateblue;
+  border: 2px solid #75c9b7;
   border-radius: 20px;
   text-align: center;
 }
 
 .tagbox {
-  border: 1px solid grey;
+  border: 1px solid #16123f;
   padding: 2px 5px;
-  background-color: grey;
-  color: white;
+  background-color: white;
+  color: #16123f;
   font-size: 10px;
 }
 
@@ -116,6 +130,12 @@ button {
   right: 10px;
   font-size: 30px;
   color: lightgrey;
+  border: none;
+  background-color: transparent;
+}
+
+.bookmark:hover {
+  color: #75c9b7;
 }
 
 .active {
@@ -123,11 +143,12 @@ button {
   top: -15px;
   right: 10px;
   font-size: 30px;
-  color: darkslateblue;
+  color: #75c9b7;
 }
 
 .answer-card {
-  margin: 30px 30px 30px 30px;
+  width: 300px;
+  margin: 30px 10px 30px 10px;
   border: 2px solid whitesmoke;
   box-shadow: 1px 3px 3px lightgrey;
   padding: 30px 30px;
@@ -135,4 +156,31 @@ button {
   flex-direction: column;
   align-items: center;
   position: relative;
+}
+
+.profil-header {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profilpic {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.text-indent {
+  margin-top: 50px;
+  padding: 10px 50px 10px 50px;
+}
+
+.pm {
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #16123f;
 }
