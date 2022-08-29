@@ -65,12 +65,16 @@ footer {
 main {
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+.question-wrapper {
   flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 .question-card {
-  width: 250px;
-  margin: 30px 30px 30px 30px;
+  width: 300px;
+  margin: 30px 10px 30px 10px;
   border: 2px solid whitesmoke;
   box-shadow: 1px 3px 3px lightgrey;
   padding: 30px 30px;
@@ -143,8 +147,8 @@ main {
 }
 
 .answer-card {
-  width: 250px;
-  margin: 30px 30px 30px 30px;
+  width: 300px;
+  margin: 30px 10px 30px 10px;
   border: 2px solid whitesmoke;
   box-shadow: 1px 3px 3px lightgrey;
   padding: 30px 30px;
