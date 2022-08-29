@@ -26,6 +26,11 @@ header {
   font-size: 28px;
 }
 
+.question-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
 .menu {
   display: flex;
   justify-content: space-around;
@@ -60,9 +65,11 @@ footer {
 main {
   margin-top: 100px;
   margin-bottom: 100px;
+  flex-flow: row wrap;
 }
 
 .question-card {
+  width: 250px;
   margin: 30px 30px 30px 30px;
   border: 2px solid whitesmoke;
   box-shadow: 1px 3px 3px lightgrey;
@@ -87,7 +94,7 @@ main {
   margin-bottom: 30px;
 }
 
-button {
+.question-button {
   background-color: #75c9b7;
   border: none;
   color: white;
@@ -119,6 +126,12 @@ button {
   right: 10px;
   font-size: 30px;
   color: lightgrey;
+  border: none;
+  background-color: transparent;
+}
+
+.bookmark:hover {
+  color: #75c9b7;
 }
 
 .active {
@@ -130,6 +143,7 @@ button {
 }
 
 .answer-card {
+  width: 250px;
   margin: 30px 30px 30px 30px;
   border: 2px solid whitesmoke;
   box-shadow: 1px 3px 3px lightgrey;
