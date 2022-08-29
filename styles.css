@@ -136,3 +136,25 @@ button {
   align-items: center;
   position: relative;
 }
+
+.profil-header {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profilpic {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.about-me {
+  margin-top: 50px;
+  padding: 10px 50px 10px 50px;
+}
+
+.tm {
+  margin-top: 20px;
+}
