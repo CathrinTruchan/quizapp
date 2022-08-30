@@ -1,0 +1,80 @@
+/*Question Card */
+
+.card {
+  width: 300px;
+  margin: 20px 10px 20px 10px;
+  border: 2px solid whitesmoke;
+  box-shadow: 1px 3px 3px var(--tertiary-color);
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: var(--neutral-color);
+}
+
+.card__text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card__text--hidden {
+  display: none;
+}
+
+.card__button-show {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--neutral-color);
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card__button-hide {
+  background-color: var(--neutral-color);
+  color: #16123f;
+  padding: 10px 20px;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card__tags {
+  align-self: flex-start;
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.card__tagbox {
+  border: 1px solid var(--primary-color);
+  padding: 2px 5px;
+  background-color: var(--neutral-color);
+  color: var(--primary-color);
+  font-size: 10px;
+}
+
+.card__bookmark {
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  font-size: 30px;
+  color: var(--tertiary-color);
+  border: none;
+  background-color: transparent;
+}
+
+.card__bookmark:hover {
+  color: var(--primary-color);
+}
+
+.card__bookmark--active {
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  font-size: 30px;
+  color: var(--primary-color);
+}

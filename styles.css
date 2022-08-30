@@ -1,3 +1,9 @@
+@import url(/components/header.css);
+@import url(/components/card.css);
+@import url(/components/menu.css);
+@import url(/components/profilpage.css);
+@import url(/components/variables.css);
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,183 +31,18 @@
 body {
   font-family: Montserrat;
   font-size: 14px;
-  color: #16123f;
-  background-color: #ffede1;
-}
-
-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-
-.title {
-  background-color: #16123f;
-  color: white;
-  padding: 15px;
-  text-align: center;
-  font-size: 28px;
-}
-
-.question-wrapper {
-  display: flex;
-  justify-content: space-around;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-around;
-  background-color: #16123f;
-  padding: 15px 15px 25px 15px;
-  list-style: none;
-}
-
-.menulink {
-  text-decoration: none;
-  color: white;
-  font-size: 30px;
-  padding: 5px 15px;
-}
-
-footer {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}
-
-.menulink:hover {
-  color: #ffede1;
-}
-
-.menulink--active {
-  color: white;
-  border-bottom: 2px solid white;
+  color: var(--primary-color);
+  background: radial-gradient(
+    circle,
+    rgba(201, 249, 246, 1) 8%,
+    rgba(255, 237, 225, 1) 100%
+  );
 }
 
 main {
   margin-top: 100px;
   margin-bottom: 100px;
-}
-
-.question-wrapper {
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-.question-card {
-  width: 300px;
-  margin: 20px 10px 20px 10px;
-  border: 2px solid whitesmoke;
-  box-shadow: 1px 3px 3px lightgrey;
-  padding: 30px 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  background-color: white;
-}
-
-.tags {
-  align-self: flex-start;
-  margin-top: 30px;
-  display: flex;
-  gap: 10px;
   flex-wrap: wrap;
-  list-style: none;
-}
-
-.question {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.question-button {
-  background-color: #16123f;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
-  text-align: center;
-}
-
-.button--hide {
-  background-color: white;
-  color: #16123f;
-  padding: 10px 20px;
-  border: 2px solid #16123f;
-  border-radius: 20px;
-  text-align: center;
-}
-
-.tagbox {
-  border: 1px solid #16123f;
-  padding: 2px 5px;
-  background-color: white;
-  color: #16123f;
-  font-size: 10px;
-}
-
-.bookmark {
-  position: absolute;
-  top: -15px;
-  right: 10px;
-  font-size: 30px;
-  color: lightgrey;
-  border: none;
-  background-color: transparent;
-}
-
-.bookmark:hover {
-  color: #16123f;
-}
-
-.active {
-  position: absolute;
-  top: -15px;
-  right: 10px;
-  font-size: 30px;
-  color: #16123f;
-}
-
-.answer-card {
-  width: 300px;
-  margin: 20px 10px 20px 10px;
-  border: 2px solid whitesmoke;
-  box-shadow: 1px 3px 3px lightgrey;
-  padding: 30px 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  background-color: white;
-}
-
-.profil-header {
-  display: flex;
   justify-content: center;
-  gap: 50px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.profilpic {
-  width: 200px;
-  border-radius: 50%;
-}
-
-.text-indent {
-  margin-top: 50px;
-  padding: 10px 50px 10px 50px;
-}
-
-.pm {
-  margin-top: 20px;
-}
-
-a {
-  text-decoration: none;
-  color: #16123f;
 }
