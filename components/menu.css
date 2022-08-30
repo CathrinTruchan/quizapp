@@ -3,7 +3,7 @@
 .menu {
   display: flex;
   justify-content: space-around;
-  background-color: #16123f;
+  background-color: var(--primary-color);
   padding: 15px 15px 25px 15px;
   list-style: none;
   width: 100%;
@@ -14,16 +14,16 @@
 
 .menu__link {
   text-decoration: none;
-  color: white;
+  color: var(--neutral-color);
   font-size: 30px;
   padding: 5px 15px;
 }
 
 .menu__link:hover {
-  color: #ffede1;
+  color: var(--secondary-color);
 }
 
 .menu__link--active {
   color: white;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--neutral-color);
 }

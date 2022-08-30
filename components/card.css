@@ -4,13 +4,13 @@
   width: 300px;
   margin: 20px 10px 20px 10px;
   border: 2px solid whitesmoke;
-  box-shadow: 1px 3px 3px lightgrey;
+  box-shadow: 1px 3px 3px var(--tertiary-color);
   padding: 30px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  background-color: white;
+  background-color: var(--neutral-color);
 }
 
 .card__text {
@@ -23,19 +23,19 @@
 }
 
 .card__button-show {
-  background-color: #16123f;
+  background-color: var(--primary-color);
   border: none;
-  color: white;
+  color: var(--neutral-color);
   padding: 10px 20px;
   border-radius: 20px;
   text-align: center;
 }
 
 .card__button-hide {
-  background-color: white;
+  background-color: var(--neutral-color);
   color: #16123f;
   padding: 10px 20px;
-  border: 2px solid #16123f;
+  border: 2px solid var(--primary-color);
   border-radius: 20px;
   text-align: center;
 }
@@ -50,10 +50,10 @@
 }
 
 .card__tagbox {
-  border: 1px solid #16123f;
+  border: 1px solid var(--primary-color);
   padding: 2px 5px;
-  background-color: white;
-  color: #16123f;
+  background-color: var(--neutral-color);
+  color: var(--primary-color);
   font-size: 10px;
 }
 
@@ -62,13 +62,13 @@
   top: -15px;
   right: 10px;
   font-size: 30px;
-  color: lightgrey;
+  color: var(--tertiary-color);
   border: none;
   background-color: transparent;
 }
 
 .card__bookmark:hover {
-  color: #16123f;
+  color: var(--primary-color);
 }
 
 .card__bookmark--active {
@@ -76,5 +76,5 @@
   top: -15px;
   right: 10px;
   font-size: 30px;
-  color: #16123f;
+  color: var(--primary-color);
 }

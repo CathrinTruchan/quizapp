@@ -2,6 +2,7 @@
 @import url(/components/card.css);
 @import url(/components/menu.css);
 @import url(/components/profilpage.css);
+@import url(/components/variables.css);
 
 * {
   box-sizing: border-box;
@@ -30,8 +31,12 @@
 body {
   font-family: Montserrat;
   font-size: 14px;
-  color: #16123f;
-  background-color: #ffede1;
+  color: var(--primary-color);
+  background: linear-gradient(
+    36deg,
+    rgba(201, 249, 246, 1) 8%,
+    rgba(255, 237, 225, 1) 100%
+  );
 }
 
 main {
@@ -40,20 +45,4 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-/* Allgemeines */
-
-.text-indent {
-  margin-top: 50px;
-  padding: 10px 50px 10px 50px;
-}
-
-.pm {
-  margin-top: 20px;
-}
-
-a {
-  text-decoration: none;
-  color: #16123f;
 }

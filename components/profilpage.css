@@ -12,3 +12,17 @@
   width: 200px;
   border-radius: 50%;
 }
+
+.text-indent {
+  margin-top: 50px;
+  padding: 10px 50px 10px 50px;
+}
+
+.pm {
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
