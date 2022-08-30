@@ -12,13 +12,13 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <h1 class="title">Quiz App</h1>
+    <header class="header">
+      <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="profil-header">
+      <section class="profil__header">
         <img
-          class="profilpic"
+          class="profil__pic"
           src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
           alt="Profil Picture"
         />
@@ -39,22 +39,16 @@
       </section>
     </main>
     <footer>
-      <nav>
-        <ul class="menu">
-          <li>
-            <a class="menulink" href="index.html"><i class="fa fa-home"></i></a>
-          </li>
-          <li>
-            <a class="menulink" href="bookmark.html"
-              ><i class="fa fa-bookmark"></i
-            ></a>
-          </li>
-          <li>
-            <a class="menulink menulink--active" href="profil.html"
-              ><i class="fa fa-user"></i
-            ></a>
-          </li>
-        </ul>
+      <nav class="menu">
+        <a class="menu__link" href="index.html"><i class="fa fa-home"></i></a>
+
+        <a class="menu__link" href="bookmark.html"
+          ><i class="fa fa-bookmark"></i
+        ></a>
+
+        <a class="menu__link menu__link--active" href="profil.html"
+          ><i class="fa fa-user"></i
+        ></a>
       </nav>
     </footer>
   </body>

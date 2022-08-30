@@ -12,52 +12,57 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <h1 class="title">Quiz App</h1>
+    <header class="header">
+      <h1>Quiz App</h1>
     </header>
     <main class="question-wrapper">
-      <section class="question-card">
-        <div class="bookmark active" aria-label="Bookmark">
+      <section class="card">
+        <div class="card__bookmark active" aria-label="Bookmark">
           <i class="fa fa-bookmark"></i>
         </div>
-        <span class="question">What property changes the axis in flexbox?</span>
-        <button class="question-button">Show Answer</button>
-        <ul class="tags">
-          <li class="tagbox">#html</li>
-          <li class="tagbox">#flexbox</li>
-          <li class="tagbox">#css</li>
+        <span class="card__text"
+          >What property changes the axis in flexbox?</span
+        >
+        <span class="card__text card__text--hidden"
+          >The property "flex direction"</span
+        >
+        <button class="card__button-show">Show Answer</button>
+        <ul class="card__tags">
+          <li class="card__tagbox">#html</li>
+          <li class="card__tagbox">#flexbox</li>
+          <li class="card__tagbox">#css</li>
         </ul>
       </section>
-      <section class="question-card">
-        <div class="bookmark active" aria-label="Bookmark">
+      <section class="card">
+        <div
+          class="card__bookmark card__bookmark--active"
+          aria-label="Bookmark"
+        >
           <i class="fa fa-bookmark"></i>
         </div>
-        <span class="question">What property changes the axis in flexbox?</span>
-        <button class="question-button">Show Answer</button>
-        <ul class="tags">
-          <li class="tagbox">#html</li>
-          <li class="tagbox">#flexbox</li>
-          <li class="tagbox">#css</li>
+        <span class="card__text"
+          >What property changes the axis in flexbox?</span
+        >
+        <span class="card__text card__text--hidden"
+          >The property "flex direction"</span
+        >
+        <button class="card__button-show">Show Answer</button>
+        <ul class="card__tags">
+          <li class="card__tagbox">#html</li>
+          <li class="card__tagbox">#flexbox</li>
+          <li class="card__tagbox">#css</li>
         </ul>
       </section>
     </main>
     <footer>
-      <nav>
-        <ul class="menu">
-          <li>
-            <a class="menulink" href="index.html"><i class="fa fa-home"></i></a>
-          </li>
-          <li>
-            <a class="menulink menulink--active" href="bookmark.html"
-              ><i class="fa fa-bookmark"></i
-            ></a>
-          </li>
-          <li>
-            <a class="menulink" href="profil.html"
-              ><i class="fa fa-user"></i
-            ></a>
-          </li>
-        </ul>
+      <nav class="menu">
+        <a class="menu__link" href="index.html"><i class="fa fa-home"></i></a>
+
+        <a class="menu__link menu__link--active" href="bookmark.html"
+          ><i class="fa fa-bookmark"></i
+        ></a>
+
+        <a class="menu__link" href="profil.html"><i class="fa fa-user"></i></a>
       </nav>
     </footer>
   </body>

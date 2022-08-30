@@ -1,0 +1,80 @@
+/*Question Card */
+
+.card {
+  width: 300px;
+  margin: 20px 10px 20px 10px;
+  border: 2px solid whitesmoke;
+  box-shadow: 1px 3px 3px lightgrey;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: white;
+}
+
+.card__text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card__text--hidden {
+  display: none;
+}
+
+.card__button-show {
+  background-color: #16123f;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card__button-hide {
+  background-color: white;
+  color: #16123f;
+  padding: 10px 20px;
+  border: 2px solid #16123f;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card__tags {
+  align-self: flex-start;
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.card__tagbox {
+  border: 1px solid #16123f;
+  padding: 2px 5px;
+  background-color: white;
+  color: #16123f;
+  font-size: 10px;
+}
+
+.card__bookmark {
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  font-size: 30px;
+  color: lightgrey;
+  border: none;
+  background-color: transparent;
+}
+
+.card__bookmark:hover {
+  color: #16123f;
+}
+
+.card__bookmark--active {
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  font-size: 30px;
+  color: #16123f;
+}

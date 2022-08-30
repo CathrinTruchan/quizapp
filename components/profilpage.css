@@ -1,0 +1,14 @@
+/*Profile Page */
+
+.profil__header {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profil__pic {
+  width: 200px;
+  border-radius: 50%;
+}
