@@ -32,11 +32,7 @@ body {
   font-family: Montserrat;
   font-size: 14px;
   color: var(--primary-color);
-  background: radial-gradient(
-    circle,
-    rgba(201, 249, 246, 1) 8%,
-    rgba(255, 237, 225, 1) 100%
-  );
+  background: var(--secondary-color);
 }
 
 main {
