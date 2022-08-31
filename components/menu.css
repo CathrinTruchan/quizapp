@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-around;
   background-color: var(--primary-color);
-  padding: 15px 15px 25px 15px;
+  padding: 10px 10px 15px 10px;
   list-style: none;
   width: 100%;
   position: fixed;
@@ -15,7 +15,7 @@
 .menu__link {
   text-decoration: none;
   color: var(--neutral-color);
-  font-size: 30px;
+  font-size: 26px;
   padding: 5px 15px;
 }
 
