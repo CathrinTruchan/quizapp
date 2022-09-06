@@ -22,7 +22,7 @@
   display: none;
 }
 
-.card__button-show {
+.card__button {
   background-color: var(--primary-color);
   border: none;
   color: var(--neutral-color);

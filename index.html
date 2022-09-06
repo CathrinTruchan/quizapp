@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -16,17 +17,17 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="card">
-        <div class="card__bookmark" aria-label="Bookmark">
+      <section class="card" data-js="card">
+        <div class="card__bookmark" data-js="bookmark" aria-label="Bookmark">
           <i class="fa fa-bookmark"></i>
         </div>
-        <span class="card__text"
+        <span class="card__text" data-js="question"
           >What property changes the axis in flexbox?</span
         >
-        <span class="card__text card__text--hidden"
+        <span class="card__text card__text--hidden" data-js="answer"
           >The property "flex direction"</span
         >
-        <button class="card__button-show">Show Answer</button>
+        <button class="card__button" data-js="button">Show Answer</button>
         <ul class="card__tags">
           <li class="card__tagbox">#html</li>
           <li class="card__tagbox">#flexbox</li>
@@ -61,7 +62,7 @@
         <span class="card__text card__text--hidden"
           >The property "flex direction"</span
         >
-        <button class="card__button-show">Show Answer</button>
+        <button class="card__button">Show Answer</button>
         <ul class="card__tags">
           <li class="card__tagbox">#html</li>
           <li class="card__tagbox">#flexbox</li>
@@ -78,7 +79,7 @@
         <span class="card__text card__text--hidden"
           >The property "flex direction"</span
         >
-        <button class="card__button-show">Show Answer</button>
+        <button class="card__button">Show Answer</button>
         <ul class="card__tags">
           <li class="card__tagbox">#html</li>
           <li class="card__tagbox">#flexbox</li>
