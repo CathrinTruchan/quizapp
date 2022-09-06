@@ -1,8 +1,8 @@
 /*Question Card */
 
 .card {
-  width: 100%;
-  margin: 20px 50px 20px 50px;
+  /*width: max-width(400px);
+  margin: 20px 50px 20px 50px;*/
   border: 2px solid whitesmoke;
   box-shadow: 1px 3px 3px var(--tertiary-color);
   padding: 30px 30px;
