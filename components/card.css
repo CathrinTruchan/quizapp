@@ -27,6 +27,7 @@
   border: none;
   color: var(--neutral-color);
   padding: 10px 20px;
+  border: 2px solid var(--primary-color);
   border-radius: 20px;
   text-align: center;
 }

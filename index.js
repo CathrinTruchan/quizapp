@@ -4,6 +4,13 @@ const myQuestion = document.querySelector('[data-js="question"]');
 const myAnswer = document.querySelector('[data-js="answer"]');
 const myBookmark = document.querySelector('[data-js="bookmark"]');
 
+// myButton.addEventListener("click", () => {
+// myButton.classList.toggle("card__button-hide");
+// myQuestion.classList.toggle("card__text--hidden");
+// myAnswer.classList.toggle("card__text--hidden");
+// myQuestion.classList.toggle("card__text--hidden");
+// });
+
 myButton.addEventListener("click", () => {
   if (myButton.textContent === "Show Answer") {
     myButton.classList.add("card__button-hide");
