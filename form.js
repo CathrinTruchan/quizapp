@@ -15,8 +15,8 @@ function calculateCharactersLeft(inputField, textField) {
   const charactersLeft = 150 - parseInt(inputField.value.length);
   textField.textContent = `${charactersLeft} characters left`;
   if (parseInt(charactersLeft) <= 10) {
-    textField.style.color = "red";
-  } else textField.style.color = "var(--tertiary-color)";
+    textField.classList.add("form__text-info--red");
+  } else textField.classList.remove("form__text-info--red");
 }
 
 inputQuestion.addEventListener("input", () => {
