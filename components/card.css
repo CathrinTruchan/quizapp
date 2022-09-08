@@ -29,6 +29,13 @@
   border: 2px solid var(--primary-color);
   border-radius: 20px;
   text-align: center;
+  box-shadow: 0px 0px 0px var(--tertiary-color);
+  transform: scale(1);
+  transition: 0.2s ease-in-out;
+}
+
+.card__button:hover {
+  box-shadow: 2px 5px 5px var(--tertiary-color);
 }
 
 .card__button-hide {
@@ -69,6 +76,7 @@
 
 .card__bookmark:hover {
   color: var(--primary-color);
+  cursor: pointer;
 }
 
 .card__bookmark--active {

@@ -11,6 +11,8 @@ const myBookmark = document.querySelector('[data-js="bookmark"]');
 // myQuestion.classList.toggle("card__text--hidden");
 // });
 
+// Funktionalität Card
+
 myButton.addEventListener("click", () => {
   if (myButton.textContent === "Show Answer") {
     myButton.classList.add("card__button-hide");

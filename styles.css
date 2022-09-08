@@ -3,6 +3,7 @@
 @import url(/components/menu.css);
 @import url(/components/profilpage.css);
 @import url(/components/variables.css);
+@import url(/components/form.css);
 
 * {
   box-sizing: border-box;
