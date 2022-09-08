@@ -69,6 +69,7 @@
 
 .card__bookmark:hover {
   color: var(--primary-color);
+  cursor: pointer;
 }
 
 .card__bookmark--active {

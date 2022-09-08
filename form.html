@@ -17,13 +17,32 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      </section>
+      <h2 id="form-headline">Add a new Question</h2>
+      <form aria-labelledby="form-headline">
+        <label for="question">Your question</label>
+        <input
+          type="text"
+          id="question"
+          name="user-question"
+          maxlength="150"
+          required
+        />
+        <label for="answer">>Your anwer</label>
+        <input
+          type="text"
+          id="answer"
+          name="user-answer"
+          maxlength="150"
+          required
+        />
+        <label for="tag">Tag</label>
+        <input type="text" id="tag" name="tag" />
+        <button type="submit">Submit</button>
+      </form>
     </main>
     <footer>
       <nav class="menu">
-        <a class="menu__link" href="index.html"
-          ><i class="fa fa-home"></i
-        ></a>
+        <a class="menu__link" href="index.html"><i class="fa fa-home"></i></a>
 
         <a class="menu__link" href="bookmark.html"
           ><i class="fa fa-bookmark"></i
