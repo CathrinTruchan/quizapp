@@ -8,19 +8,16 @@ form.addEventListener("submit", (event) => {
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
   console.log(data);
+  createQuestionCard(data);
 });
 
-/*
 function createQuestionCard(data) {
   const card = document.createElement("section");
   newCardSection.append(card);
-  const bookmark = document.createElement("div");
-  card.append(bookmark);
-  bookmark.classList.add("card__bookmark");
-  const bookmarkIcon = document.createElement("i");
-  bookmark.append(bookmarkIcon);
-  bookmarkIcon.classList.add("fa fa-bookmark");
-}*/
+  const question = document.createElement("span");
+  card.append(question);
+  card.classList.add();
+}
 
 /*<section class="card" data-js="card">
   <div class="card__bookmark" data-js="bookmark" aria-label="Bookmark">
