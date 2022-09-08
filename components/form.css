@@ -2,23 +2,45 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 400px;
 }
 
 .form__input {
-  width: 45vw;
   height: 4rem;
-  margin: 1rem 0;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 1px 3px 3px var(--tertiary-color);
+  border: 1px solid lightgrey;
 }
 
 .form__tag-input {
-  width: 45vw;
-  margin: 1rem 1rem;
+  width: 100%;
+  box-shadow: 1px 3px 3px var(--tertiary-color);
+  border: 1px solid lightgrey;
+}
+
+.form__cards {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form__button {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--neutral-color);
+  padding: 10px 20px;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 2rem;
 }

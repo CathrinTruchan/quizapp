@@ -9,32 +9,64 @@ form.addEventListener("submit", (event) => {
   const data = Object.fromEntries(formData);
   console.log(data);
   createQuestionCard(data);
+  form.reset();
+  question.focus();
 });
 
 function createQuestionCard(data) {
   const card = document.createElement("section");
   newCardSection.append(card);
+  card.classList.add("card", "form__cards");
+  card.setAttribute("data-js", "card");
+
+  const bookmark = document.createElement("div");
+  card.append(bookmark);
+  bookmark.classList.add("card__bookmark");
+  bookmark.setAttribute("data-js", "bookmark");
+
+  const bookmarkIcon = document.createElement("i");
+  bookmark.append(bookmarkIcon);
+  bookmarkIcon.classList.add("fa", "fa-bookmark");
+  bookmark.addEventListener("click", () => {
+    bookmark.classList.toggle("card__bookmark--active");
+  });
+
   const question = document.createElement("span");
   card.append(question);
-  card.classList.add();
-}
+  question.classList.add("card__text");
+  question.setAttribute("data-js", "question");
+  question.textContent = data.question;
 
-/*<section class="card" data-js="card">
-  <div class="card__bookmark" data-js="bookmark" aria-label="Bookmark">
-    <i class="fa fa-bookmark"></i>
-  </div>
-  <span class="card__text" data-js="question">
-    What property changes the axis in flexbox?
-  </span>
-  <span class="card__text card__text--hidden" data-js="answer">
-    The property "flex direction"
-  </span>
-  <button class="card__button" data-js="button">
-    Show Answer
-  </button>
-  <ul class="card__tags">
-    <li class="card__tagbox">#html</li>
-    <li class="card__tagbox">#flexbox</li>
-    <li class="card__tagbox">#css</li>
-  </ul>
-</section>; */
+  const answer = document.createElement("span");
+  card.append(answer);
+  answer.classList.add("card__text", "card__text--hidden");
+  answer.setAttribute("data-js", "answer");
+  answer.textContent = data.answer;
+
+  const button = document.createElement("button");
+  card.append(button);
+  button.classList.add("card__button");
+  button.setAttribute("data-js", "button");
+  button.textContent = "Show Answer";
+  button.addEventListener("click", () => {
+    if (button.textContent === "Show Answer") {
+      button.classList.add("card__button-hide");
+      button.textContent = "Hide Answer";
+      question.classList.add("card__text--hidden");
+      answer.classList.remove("card__text--hidden");
+    } else {
+      button.classList.remove("card__button-hide");
+      button.textContent = "Show Answer";
+      question.classList.remove("card__text--hidden");
+      answer.classList.add("card__text--hidden");
+    }
+  });
+
+  const tagList = document.createElement("ul");
+  card.append(tagList);
+  tagList.classList.add("card__tags");
+  const tagElement = document.createElement("li");
+  tagList.append(tagElement);
+  tagElement.classList.add("card__tagbox");
+  tagElement.textContent = data.tag;
+}
