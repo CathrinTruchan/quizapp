@@ -44,3 +44,9 @@
   text-align: center;
   margin-top: 2rem;
 }
+
+.form__text-info {
+  font-size: 0.7rem;
+  align-self: flex-end;
+  color: var(--tertiary-color);
+}

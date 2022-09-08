@@ -2,6 +2,30 @@
 
 const form = document.querySelector('[data-js="form"]');
 const newCardSection = document.querySelector('[data-js="new-cards"]');
+const inputQuestion = document.querySelector('[data-js="question"]');
+const inputAnswer = document.querySelector('[data-js="answer"]');
+const charactersLeftInfoQuestion = document.querySelector(
+  '[data-js="characters-left-question"]'
+);
+const charactersLeftInfoAnswer = document.querySelector(
+  '[data-js="characters-left-answer"]'
+);
+
+function calculateCharactersLeft(inputField, textField) {
+  const charactersLeft = 150 - parseInt(inputField.value.length);
+  textField.textContent = `${charactersLeft} characters left`;
+  if (parseInt(charactersLeft) <= 10) {
+    textField.style.color = "red";
+  } else textField.style.color = "var(--tertiary-color)";
+}
+
+inputQuestion.addEventListener("input", () => {
+  calculateCharactersLeft(inputQuestion, charactersLeftInfoQuestion);
+});
+
+inputAnswer.addEventListener("input", () => {
+  calculateCharactersLeft(inputAnswer, charactersLeftInfoAnswer);
+});
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();

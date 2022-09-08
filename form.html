@@ -24,18 +24,22 @@
           class="form__input"
           id="question"
           name="question"
+          data-js="question"
           maxlength="150"
           required
         ></textarea>
+        <p class="form__text-info" data-js="characters-left-question"></p>
         <label for="answer">Your anwer</label>
         <textarea
           class="form__input"
           type="text"
           id="answer"
+          data-js="answer"
           name="answer"
           maxlength="150"
           required
         ></textarea>
+        <p class="form__text-info" data-js="characters-left-answer"></p>
         <label for="tag">Tag</label>
         <input class="form__tag-input" type="text" id="tag" name="tag" />
         <button type="submit" class="form__button">Submit</button>
