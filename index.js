@@ -2,7 +2,8 @@ const myCard = document.querySelector('[data-js="card"]');
 const myButton = document.querySelector('[data-js="button"]');
 const myQuestion = document.querySelector('[data-js="question"]');
 const myAnswer = document.querySelector('[data-js="answer"]');
-const myBookmark = document.querySelector('[data-js="bookmark"]');
+const myBookmark = document.querySelectorAll('[data-js="bookmark"]');
+console.log(myBookmark);
 
 // myButton.addEventListener("click", () => {
 // myButton.classList.toggle("card__button-hide");
@@ -27,6 +28,14 @@ myButton.addEventListener("click", () => {
   }
 });
 
-myBookmark.addEventListener("click", () => {
-  myBookmark.classList.toggle("card__bookmark--active");
-});
+/*for (let i = 0; i <= myBookmark.length; i++) {
+  myBookmark[i].addEventListener("click", () => {
+    myBookmark[i].classList.toggle("card__bookmark--active");
+  });
+}*/
+
+for (const bookmark of myBookmark) {
+  bookmark.addEventListener("click", () => {
+    bookmark.classList.toggle("card__bookmark--active");
+  });
+}
