@@ -2,16 +2,21 @@ import createQuestionCard from "./components/cards.js";
 
 const cardContainer = document.querySelector('[data-js="card-container"]');
 
-const questionOne = createQuestionCard(
-  "Meine erste Frage",
-  "Meine erste Anwort",
-  "mein erster Tag"
-);
-cardContainer.append(questionOne);
+const cardsContent = [
+  {
+    question: "Wie heißt Ross Gellers Affe?",
+    answer: "Marcel",
+    tag: "#Friends",
+  },
 
-const questionTwo = createQuestionCard(
-  "Meine zweite Frage",
-  "Meine zweite Anwort",
-  "mein zweiter Tag"
-);
-cardContainer.append(questionTwo);
+  {
+    question: "In welchem Cafe arbeitet Rachel?",
+    answer: "Central Perk",
+    tag: "#Friends",
+  },
+];
+
+const newCards = cardsContent.forEach((card) => {
+  const singleCard = createQuestionCard(card.question, card.answer, card.tag);
+  cardContainer.append(singleCard);
+});

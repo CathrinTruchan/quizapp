@@ -2,27 +2,27 @@ import createQuestionCard from "./components/cards.js";
 
 const cardsContent = [
   {
-    question: "Wie heißt Ross Gellers Affe bei Friends?",
+    question: "Wie heißt Ross Gellers Affe?",
     answer: "Marcel",
-    tag: "Friends",
+    tag: "#Friends",
   },
 
   {
     question: "In welchem Cafe arbeitet Rachel?",
     answer: "Central Perk",
-    tag: "Friends",
+    tag: "#Friends",
   },
 
   {
     question: "Wer ist Chandlers Mitbewohner?",
     answer: "Joey Tribbiani",
-    tag: "Friends",
+    tag: "#Friends",
   },
 
   {
     question: "Wie heißt Pheobes Zwillingsschwester?",
     answer: "Ursula",
-    tag: "Friends",
+    tag: "#Friends",
   },
 ];
 
@@ -35,8 +35,6 @@ const newCards = cardsContent.forEach((card) => {
   const singleCard = createQuestionCard(card.question, card.answer, card.tag);
   cardContainer.append(singleCard);
 });
-
-c;
 
 // Funktionalität Card
 /*
