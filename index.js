@@ -1,43 +1,45 @@
 import createQuestionCard from "./components/cards.js";
 
-const myCard = document.querySelector('[data-js="card"]');
+const cardsContent = [
+  {
+    question: "Wie heißt Ross Gellers Affe bei Friends?",
+    answer: "Marcel",
+    tag: "Friends",
+  },
+
+  {
+    question: "In welchem Cafe arbeitet Rachel?",
+    answer: "Central Perk",
+    tag: "Friends",
+  },
+
+  {
+    question: "Wer ist Chandlers Mitbewohner?",
+    answer: "Joey Tribbiani",
+    tag: "Friends",
+  },
+
+  {
+    question: "Wie heißt Pheobes Zwillingsschwester?",
+    answer: "Ursula",
+    tag: "Friends",
+  },
+];
+
 const myButton = document.querySelector('[data-js="button"]');
 const myQuestion = document.querySelector('[data-js="question"]');
 const myAnswer = document.querySelector('[data-js="answer"]');
-const myBookmark = document.querySelectorAll('[data-js="bookmark"]');
-
 const cardContainer = document.querySelector('[data-js="card-container"]');
 
-const questionOne = createQuestionCard(
-  "Meine erste Frage",
-  "Meine erste Anwort",
-  "mein erster Tag"
-);
-cardContainer.append(questionOne);
+const newCards = cardsContent.forEach((card) => {
+  const singleCard = createQuestionCard(card.question, card.answer, card.tag);
+  cardContainer.append(singleCard);
+});
 
-const questionTwo = createQuestionCard(
-  "Meine zweite Frage",
-  "Meine zweite Anwort",
-  "mein zweiter Tag"
-);
-cardContainer.append(questionTwo);
-
-const questionThree = createQuestionCard(
-  "Meine dritte Frage",
-  "Meine dritte Anwort",
-  "mein dritter Tag"
-);
-cardContainer.append(questionThree);
-
-const questionFour = createQuestionCard(
-  "Meine vierte Frage",
-  "Meine vierte Anwort",
-  "mein vierter Tag"
-);
-cardContainer.append(questionFour);
+c;
 
 // Funktionalität Card
-
+/*
 myButton.addEventListener("click", () => {
   if (myButton.textContent === "Show Answer") {
     myButton.classList.add("card__button-hide");
@@ -50,11 +52,4 @@ myButton.addEventListener("click", () => {
     myQuestion.classList.remove("card__text--hidden");
     myAnswer.classList.add("card__text--hidden");
   }
-});
-
-/*
-for (const bookmark of myBookmark) {
-  bookmark.addEventListener("click", () => {
-    bookmark.classList.toggle("card__bookmark--active");
-  });
-} */
+}); */
