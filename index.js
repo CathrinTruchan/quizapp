@@ -52,8 +52,9 @@ myButton.addEventListener("click", () => {
   }
 });
 
+/*
 for (const bookmark of myBookmark) {
   bookmark.addEventListener("click", () => {
     bookmark.classList.toggle("card__bookmark--active");
   });
-}
+} */
