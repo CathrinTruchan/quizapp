@@ -31,9 +31,9 @@ const myQuestion = document.querySelector('[data-js="question"]');
 const myAnswer = document.querySelector('[data-js="answer"]');
 const cardContainer = document.querySelector('[data-js="card-container"]');
 
-const newCards = cardsContent.forEach((card) => {
-  const singleCard = createQuestionCard(card.question, card.answer, card.tag);
-  cardContainer.append(singleCard);
+cardsContent.forEach((card) => {
+  const newCard = createQuestionCard(card.question, card.answer, card.tag);
+  cardContainer.append(newCard);
 });
 
 // Funktionalität Card
