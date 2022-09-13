@@ -35,19 +35,3 @@ cardsContent.forEach((card) => {
   const newCard = createQuestionCard(card.question, card.answer, card.tag);
   cardContainer.append(newCard);
 });
-
-// Funktionalität Card
-/*
-myButton.addEventListener("click", () => {
-  if (myButton.textContent === "Show Answer") {
-    myButton.classList.add("card__button-hide");
-    myButton.textContent = "Hide Answer";
-    myQuestion.classList.add("card__text--hidden");
-    myAnswer.classList.remove("card__text--hidden");
-  } else {
-    myButton.classList.remove("card__button-hide");
-    myButton.textContent = "Show Answer";
-    myQuestion.classList.remove("card__text--hidden");
-    myAnswer.classList.add("card__text--hidden");
-  }
-}); */
